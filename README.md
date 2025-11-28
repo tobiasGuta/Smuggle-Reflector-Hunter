@@ -69,7 +69,14 @@ Once loaded, simply browse your target website using Burp's embedded browser. Wa
 | **🟧 ORANGE** | **Interesting Header Found** | Check the "Notes" column. If `Age` is present, test for Cache Poisoning. If `Transfer-Encoding` is present, check for CL.TE discrepancies. |
 | **🟦 BLUE** | **Input Reflected** | The parameter mentioned in the "Notes" column is reflected in the HTML. Send to **Repeater** and attempt XSS payloads (e.g., `<script>alert(1)</script>`). |
 
+🟦 BLUE
+
 <img width="1912" height="886" alt="image" src="https://github.com/user-attachments/assets/029c039c-8a86-465f-bba4-cb25e13d8d37" />
+
+🟧 ORANGE
+
+<img width="1913" height="882" alt="image" src="https://github.com/user-attachments/assets/7448b447-a4d6-44fb-9c53-c8820d9d766a" />
+
 
 ## Tech Stack
 * **Language:** Java (JDK 21)
