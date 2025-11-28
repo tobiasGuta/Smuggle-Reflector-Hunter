@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.bughunter'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // CHANGE: 'implementation' -> 'compileOnly'
+    // This tells Gradle NOT to put this inside your JAR
+    compileOnly 'net.portswigger.burp.extensions:montoya-api:2023.12.1'
+}
+
+java {
+    toolchain {
+        // Keep this at 21 since we confirmed you have JDK 21
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+jar {
+    // We removed the "from { ... }" block because we don't want to bundle dependencies anymore.
+    archiveFileName = 'SmuggleReflector.jar'
+}
