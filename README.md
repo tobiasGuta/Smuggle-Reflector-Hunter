@@ -2,9 +2,7 @@
 
 **A Burp Suite Extension for Passive Vulnerability Detection**
 
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Burp Suite](https://img.shields.io/badge/Burp%20Suite-Montoya%20API-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white) ![Security](https://img.shields.io/badge/Cybersecurity-Bug_Bounty-red?style=for-the-badge)
 
 ## Overview
 **Smuggle & Reflector Hunter** is a lightweight Burp Suite extension designed for **Community Edition** users. It acts as a passive assistant, analyzing HTTP traffic in real-time to flag potential **HTTP Request Smuggling**, **Cache Poisoning**, and **Reflected XSS** vectors without sending active attack traffic.
